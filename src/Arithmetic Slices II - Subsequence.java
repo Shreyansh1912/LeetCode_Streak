@@ -13,7 +13,7 @@ class Solution {
             int d = (int)diff;
             int c1 = map[i].getOrDefault(d, 0);
             int c2 = map[j].getOrDefault(d, 0);
-            res += c2;
+            res+=c2;
             map[i].put(d, c1 + c2 + 1);
         }
     }
